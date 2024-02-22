@@ -7,3 +7,4 @@ int num = int.Parse(Console.ReadLine());
 int num1 = num%10;
 int num2 = num/100;
 Console.Write($"сумма числа {num2} и {num1} равна {num1+num2}");
+
