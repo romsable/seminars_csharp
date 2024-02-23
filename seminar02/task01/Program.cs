@@ -23,17 +23,37 @@
 //     Console.WriteLine("Число не трехзначное");
 // }
 
+
 // Напишите программу, которая будет принимать на вход два 
 // числа и выводить, является ли второе число кратным первому. 
 // Если второе число некратно первому, то программа выводит остаток от деления.
 
-int num1 = Convert.ToInt32(Console.ReadLine());
-int num2 = Convert.ToInt32(Console.ReadLine());
-if (num2%num1==0)
+// int num1 = Convert.ToInt32(Console.ReadLine());
+// int num2 = Convert.ToInt32(Console.ReadLine());
+// if (num2%num1==0)
+// {
+//     Console.WriteLine("второе число кратно первому");
+// }
+// else 
+// {
+//     Console.WriteLine(num2%num1);
+// }
+
+
+// Напишите программу, которая выводит третью слева цифру 
+// заданного числа или сообщает, что третьей цифры нет.
+
+Console.WriteLine("Введите число");
+int num = Convert.ToInt32(Console.ReadLine());
+if(num<100)
 {
-    Console.WriteLine("второе число кратно первому");
+    Console.WriteLine("третьего числа нет");
 }
-else 
+else
 {
-    Console.WriteLine(num2%num1);
+    while (num >= 1000)
+{
+    num /= 10; //num = num / 10
+}
+Console.WriteLine(num%10);
 }
